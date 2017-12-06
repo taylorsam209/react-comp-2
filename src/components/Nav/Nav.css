@@ -1,0 +1,13 @@
+#Nav {
+    min-width: 100vw;
+    background-color: #05161C;
+    height: 100px;
+}
+
+.logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    height: 60px;
+    float: left;
+}
