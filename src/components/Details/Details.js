@@ -6,9 +6,21 @@ import { connect } from 'react-redux';
 
 
 class Details extends Component {
+    constructor(props){
+        super(props)
+
+        this.state={
+            animal:{}
+        }
+    }
 
     componentDidMount(){
-        // const {match: {params} } = this.props;
+        console.log(this.props.match) 
+        this.setState({ animal: this.props.animal})
+    }
+
+    componentWillReceiveProps(nextProps){
+        this.setState({animal: nextProps.animal})
     }
 
     render() {
@@ -18,8 +30,8 @@ class Details extends Component {
             <div>
                 <Nav />
                 <div>
-                    {name}
-                    <img src={image} alt='' />
+                <h1>{this.props.match.params.name}</h1> {/* Will display animal name*/}
+                    <img src={this.state.animal.image} alt='' />
                 </div>
             </div>
         );

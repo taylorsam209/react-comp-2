@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.name{
+    display: inline;
+    color: #ef882D;
+    font-family: 'Open Sans';
+    font-weight: none;
+}
+
+.image {
+    width:20%;
+}
