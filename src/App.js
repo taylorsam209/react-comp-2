@@ -13,6 +13,7 @@ class App extends Component {
         <Switch>
       <Route component={Browse} path='/' exact/>
       <Route component={Details} path="/details/:name"/>
+      <Route path='/dummypage' render={()=><h1> You found me. I am not a real page, but congrats! Return to main page by entering regular domain.</h1>} />
       </Switch>
       </div>
       </BrowserRouter>

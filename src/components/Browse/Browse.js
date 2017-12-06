@@ -31,9 +31,9 @@ class Browse extends Component {
                 {this.state.animals.map((e, i, arr) => {
                     return (
                         <div key={i}>
-                            {e.name}
+                            <h2 className="name">{e.name}</h2>
                             <Link to={`/details/${e.name}`}>
-                                <img onClick={() => { this.props.getAnimal(e.animal_id) }} src={e.image} alt='' />
+                                <img className='image' onClick={() => { this.props.getAnimal(e.animal_id) }} src={e.image} alt='' />
                             </Link>
                         </div>
                     )
